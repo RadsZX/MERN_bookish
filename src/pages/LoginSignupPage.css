@@ -1,0 +1,125 @@
+/* Overall page container */
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #ffffff 60%, #a34e2d); /* terracotta background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Main auth box */
+  .auth-container {
+    background-color: white;
+    width: 400px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Branding section */
+  .branding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .branding-logo {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    margin-bottom: 8px;
+  }
+  
+  .branding-text h1 {
+    font-size: 30px;
+    color: #ff7043; /* coral-orange */
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  
+  .branding-text p {
+    font-size: 14px;
+    color: #795548; /* soft brown */
+    font-style: italic;
+    margin: 4px 0 0;
+  }
+  
+  /* Heading */
+  .auth-container h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #4e342e;
+  }
+  
+  /* Subheading above form */
+  .auth-title {
+    color: #795548;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  /* Input fields */
+  .auth-container input[type="text"],
+  .auth-container input[type="email"],
+  .auth-container input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+  }
+  
+  .auth-container input:focus {
+    border-color: #ffab91;
+  }
+  
+  /* Submit button */
+  .auth-container button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #ff7043;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-container button[type="submit"]:hover {
+    background-color: #f4511e;
+  }
+  
+  /* Toggle login/signup */
+  .auth-container p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #4e342e;
+  }
+  
+  .toggle-btn {
+    background: none;
+    border: none;
+    color: #ff7043;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px;
+    transition: color 0.3s;
+  }
+  
+  .toggle-btn:hover {
+    color: #f4511e;
+  }
+  

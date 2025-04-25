@@ -1,0 +1,108 @@
+/* Navbar.css */
+.navbar-modern {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #8B4513; /* Richer brown tone */
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-left .brand {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-right a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-right a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #FFD700;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-right a:hover {
+  color: #FFD700;
+}
+
+.navbar-right a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .navbar-modern {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .navbar-right {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar-right a {
+    margin: 10px;
+  }
+}
+
+/* Brand Logo Styling */
+.brand-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.brand-logo {
+  height: 70px;
+  margin-right: 10px;
+}
+
+.brand-title {
+  margin: 0;
+  color: #fff;
+  font-size: 28px;
+}
+
+/* Logout Button Styling */
+.logout-btn {
+  margin-left: 30px;
+  padding: 8px 20px;
+  background-color: #fff;
+  color: #8B4513;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logout-btn:hover {
+  background-color: #FFD700;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
