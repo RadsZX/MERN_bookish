@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
-const mongoURI = "mongodb+srv://radhikaap583:book-club25@bookclub.fbhhlwn.mongodb.net/?retryWrites=true&w=majority&appName=BookClub";
+const mongoURI = "";
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
